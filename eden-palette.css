@@ -138,3 +138,21 @@ dialog::backdrop{background:#031f18a8;backdrop-filter:blur(4px)}
 }
 @media(min-width:601px) and (max-width:900px){.home-intro{grid-template-columns:minmax(0,1fr) 42%;gap:24px}.home-intro h1{font-size:38px}}
 @media(max-width:360px){.home-intro{grid-template-columns:minmax(0,1fr) 118px;gap:12px}.home-intro img{width:118px;height:170px}.home-intro h1{font-size:30px}}
+
+/* Full garden backdrop with the introduction directly over the image. */
+.home-intro{position:relative;isolation:isolate;display:flex;align-items:center;min-height:320px;padding:32px 5.5%;overflow:hidden;background:#12382c url('assets/eden-emerald-garden.webp') center/cover no-repeat}
+.home-intro:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#041f18d9,#041f1899 35%,#041f1800 72%);pointer-events:none}
+.home-intro>div{position:relative;z-index:2;width:48%;max-width:620px;background:transparent}
+.home-intro img{position:absolute;inset:0 0 0 auto;z-index:0;width:55%;height:100%;object-fit:cover;object-position:right center;border:0;border-radius:0;mask-image:linear-gradient(90deg,transparent,#000 14%)}
+.home-intro h1{color:#fff5df;text-shadow:0 2px 12px #00180e55}
+.home-intro p:not(.eyebrow){color:#edf0df}
+.home-intro .text-link{color:#f0dca6;border-color:#d7bf82;background:transparent}
+@media(max-width:900px) and (min-width:601px){.home-intro{min-height:310px}.home-intro>div{width:52%}.home-intro img{width:66%}}
+@media(max-width:600px){
+ .home-intro{display:flex;min-height:300px;padding:25px 5%;background-position:right center}
+ .home-intro>div{width:66%;max-width:300px}
+ .home-intro img{width:100%;height:100%;object-position:right center;mask-image:none}
+ .home-intro:before{background:linear-gradient(90deg,#041f18e0,#041f188a 52%,#041f1814)}
+ .home-intro h1{font-size:32px}
+ .home-intro p:not(.eyebrow){max-width:220px}
+}

@@ -1,5 +1,9 @@
 # Eden Musk garden direction
 
+## Full-section background
+
+The selected garden now fills the entire compact introduction. The text container has a transparent background, with a subtle section-wide gradient for readability. A blended foreground image preserves the bottle proportions on wide screens. Banner height remains approximately 320px on desktop and 300px on phones, followed directly by the collection.
+
 ## Simplified storefront
 
 The homepage now uses a small 220 by 140px campaign thumbnail on desktop (92 by 120px on phones), a short introduction, the fragrance grid and three compact navigation links. The large campaign banner, bottle showcase, repeated promotional sections and announcement strip were removed from the homepage. Product images use compact rectangular frames. Full collection browsing, filters, product details, bundles, the quiz and the guide remain available through their existing routes.
