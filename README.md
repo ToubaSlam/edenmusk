@@ -1,12 +1,12 @@
 # Eden Musk fragrance storefront
 
-Live: https://toubaslam.github.io/Test1/
+Live: https://toubaslam.github.io/edenmusk/
 
 The main collection presents 47 actual Scentora perfume listings in the current source snapshot. Products retain their original names, brands, pictures, bottle options, SKU, source prices, notes, and published ingredient details. Descriptions are written in original wording around the published facts, not copied marketing prose. No invented Eden Musk perfume is used in the active collection.
 
 ## Preview locally
 
-Run `python -m http.server 4173 --bind 127.0.0.1` in this folder, then open http://127.0.0.1:4173/. ES modules require an HTTP server. No application build is required. GitHub Pages serves main/root; hash routes work under /Test1/.
+Run `python -m http.server 4173 --bind 127.0.0.1` in this folder, then open http://127.0.0.1:4173/. ES modules require an HTTP server. No application build is required. GitHub Pages serves main/root; hash routes work under /edenmusk/.
 
 ## Source files
 

@@ -1,5 +1,9 @@
 # Eden Musk garden direction
 
+## Header artwork and repository
+
+The garden background also fills the logo and navigation header, with transparent content backgrounds and a subtle dark gradient for legibility. The GitHub repository is now `ToubaSlam/edenmusk`, with the local origin pointing to `https://github.com/ToubaSlam/edenmusk.git`. The Pages site is served from `https://toubaslam.github.io/edenmusk/`.
+
 ## Full-section background
 
 The selected garden now fills the entire compact introduction. The text container has a transparent background, with a subtle section-wide gradient for readability. A blended foreground image preserves the bottle proportions on wide screens. Banner height remains approximately 320px on desktop and 300px on phones, followed directly by the collection.
