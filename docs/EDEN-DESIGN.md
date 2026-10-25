@@ -1,5 +1,9 @@
 # Eden Musk garden direction
 
+## Shared background on every page
+
+`garden-header.js` aligns one garden backdrop behind the logo, navigation, status strip and the current route's heading. The header and heading containers are transparent. Resizing, opening the mobile menu and changing routes update the backdrop height; scrolling gives the sticky navigation a readable garden-tinted surface. This treatment persists across the homepage, shop, bundles, quiz, guide, story and detail pages.
+
 ## Header artwork and repository
 
 The garden background also fills the logo and navigation header, with transparent content backgrounds and a subtle dark gradient for legibility. The GitHub repository is now `ToubaSlam/edenmusk`, with the local origin pointing to `https://github.com/ToubaSlam/edenmusk.git`. The Pages site is served from `https://toubaslam.github.io/edenmusk/`.

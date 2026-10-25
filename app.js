@@ -1,3 +1,4 @@
+import {initializeGardenHeader} from './garden-header.js';
 import {gardenHero,gardenStory} from './eden-theme.js';
 import {actualProductView,productImage,sourceNotes,enhanceProductDetails} from './actual-products.js';
 import {referenceShell,mountReferences,referenceStoreGuide} from './reference-catalogs.js';
@@ -73,3 +74,5 @@ document.addEventListener('click',e=>{if(!e.target.closest('.nav-dropdown')){$('
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.classList.remove('menu-open');$('#menuToggle').setAttribute('aria-expanded','false');$('.nav-dropdown').classList.remove('open');$('.nav-toggle').setAttribute('aria-expanded','false')}});
 document.querySelectorAll('dialog').forEach(d=>{d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog(d.id)}});d.addEventListener('close',()=>{if(!document.querySelector('dialog[open]'))document.body.classList.remove('dialog-open')})});
 window.addEventListener('hashchange',renderRoute);$('#year').textContent=new Date().getFullYear();renderRoute();
+
+initializeGardenHeader();

@@ -162,3 +162,29 @@ dialog::backdrop{background:#031f18a8;backdrop-filter:blur(4px)}
  .home-intro h1{font-size:32px}
  .home-intro p:not(.eyebrow){max-width:220px}
 }
+
+/* One persistent scene behind the logo, tabs, status and route heading. */
+body{position:relative;isolation:isolate}
+.garden-masthead{position:absolute;inset:0 0 auto;z-index:-1;width:100%;height:476px;overflow:hidden;pointer-events:none;background:#12382c url('assets/eden-emerald-garden.webp') center/cover no-repeat}
+.garden-masthead>img{position:absolute;inset:0 0 0 auto;width:60%;height:100%;object-fit:cover;object-position:right center;mask-image:linear-gradient(90deg,transparent,#000 16%)}
+.garden-masthead:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#031e18d9,#031e1899 40%,#031e1838);pointer-events:none}
+.site-header,.site-header nav,.menu-open .site-header nav,.launch-strip{background:transparent;backdrop-filter:none}
+.site-header{border-color:#d3c38c40}
+.site-header .mega-menu{background:#0b3025e0;backdrop-filter:blur(4px)}
+.site-header .menu-feature{background:#16433299}
+.header-pinned .site-header{background:linear-gradient(#062c23ce,#062c23ed),url('assets/eden-emerald-garden.webp') center top/cover;backdrop-filter:blur(8px)}
+.launch-strip{color:#f1edd9;border-color:#d3c38c40}
+.launch-strip .launch-detail{color:#e4e9d8}
+.home-intro,.page-top,.page-title,.eden-story-intro,.breadcrumbs{background:transparent;color:#fff5df;border-color:#bfa76b55}
+.home-intro:before{display:none}
+.home-intro>div{width:48%}
+.page-top h1,.page-title h1,.eden-story-intro h1{color:#fff5df;text-shadow:0 2px 12px #00180e66}
+.page-top>p:not(.eyebrow),.page-title>p:not(.eyebrow),.eden-story-intro p:not(.eyebrow){color:#edf0df}
+.page-top .eyebrow,.page-title .eyebrow,.eden-story-intro .eyebrow{color:#e3cd98}
+.breadcrumbs,.breadcrumbs a{color:#f3e7c6}
+@media(max-width:600px){
+ .garden-masthead>img{width:100%;mask-image:none}
+ .garden-masthead:after{background:linear-gradient(90deg,#031e18e8,#031e18a3 58%,#031e1859)}
+ .home-intro>div{width:66%}
+ .site-header .mega-menu{background:#0b3025e0}
+}
