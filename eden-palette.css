@@ -140,7 +140,7 @@ dialog::backdrop{background:#031f18a8;backdrop-filter:blur(4px)}
 @media(max-width:360px){.home-intro{grid-template-columns:minmax(0,1fr) 118px;gap:12px}.home-intro img{width:118px;height:170px}.home-intro h1{font-size:30px}}
 
 /* Full garden backdrop with the introduction directly over the image. */
-.site-header{background:linear-gradient(90deg,#041f18cc,#041f187a),url('assets/eden-emerald-garden.webp') center 18%/cover no-repeat;backdrop-filter:none}
+.site-header{background:linear-gradient(90deg,#041f18cc,#041f187a),url('assets/eden-emerald-garden.webp') center top/cover no-repeat;backdrop-filter:none}
 .site-header nav{background:transparent}
 .site-header header,.site-header .brand,.site-header .header-actions{background:transparent}
 .site-header .brand{color:#f3dca4;text-shadow:0 2px 12px #00180e80}
