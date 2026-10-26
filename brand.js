@@ -1,5 +1,8 @@
+import {brandedPhotos} from './data/branded-photos.js';
 // Presentation names are independent of source identifiers, URLs and product facts.
 export const displayBrand='Eden Musk';
 export const brandText=value=>String(value??'').replace(/\bSCENTORA\b/g,'EDEN MUSK').replace(/\b(?:Scentora|ALT)\b/gi,'Eden Musk');
-export const storefrontProduct=p=>({...p,brand:displayBrand,name:brandText(p.name),tag:displayBrand,description:brandText(p.description)});
-export const referenceProduct=p=>({...p,originalBrand:p.brand,originalName:p.name,brand:displayBrand,name:brandText(p.name),images:p.images.map(img=>({...img,alt:brandText(img.alt)}))});
+const photoFor=p=>brandedPhotos[p.sourceId||p.id];
+const imageFor=(p,url)=>({url,alt:brandText(p.name)+' - Eden Musk packaging visualization'});
+export const storefrontProduct=p=>{const photo=photoFor(p);return {...p,brand:displayBrand,name:brandText(p.name),tag:displayBrand,description:brandText(p.description),source:{...p.source,images:[imageFor(p,photo)],noteImages:[]},variants:p.variants.map(v=>({...v,imageUrl:photo}))}};
+export const referenceProduct=p=>{const photo=photoFor(p);return {...p,originalBrand:p.brand,originalName:p.name,brand:displayBrand,name:brandText(p.name),images:[imageFor(p,photo||'assets/eden-emerald-garden.webp')],noteImages:[],variants:p.variants.map(v=>({...v,imageUrl:photo||''}))}};

@@ -1,5 +1,12 @@
 # Eden Musk garden direction
 
+## Eden Musk bottle labels and story
+
+All 47 perfume listings now use individually edited local Eden Musk packaging images, mapped by stable source ID in `data/branded-photos.js`. The main bottle number is preserved in each generated image. Original source galleries and retailer promotion slides no longer appear in the active presentation. Published notes appear as text rather than branded retailer diagrams. Non-perfume reference entries use the Eden Musk collection artwork. Source data files, specifications, quantities, SKU, prices and ingredient disclosures remain unchanged. Image generation used the built-in tool; its prompt template is in `assets/products/GENERATION.md`.
+
+The story begins ?A little of Eden. In your everyday.? It describes fragrance as a small invitation to beauty, tranquility and personal ritual, while keeping the distinction between creative inspiration and the unseen reality of Jannah.
+
+
 ## Shared background on every page
 
 `garden-header.js` aligns one garden backdrop behind the logo, navigation, status strip and the current route's heading. The header and heading containers are transparent. Resizing, opening the mobile menu and changing routes update the backdrop height; scrolling gives the sticky navigation a readable garden-tinted surface. This treatment persists across the homepage, shop, bundles, quiz, guide, story and detail pages.

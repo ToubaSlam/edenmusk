@@ -6,14 +6,14 @@ The main shop now uses the actual Scentora perfume catalogs rather than a propos
 
 | Detail | Behavior |
 | --- | --- |
-| Names and brands | Original product names and clearly visible Scentora branding |
-| Product imagery | Actual retailer photos and galleries; no relabeled Eden Musk bottle art |
+| Names and brands | Eden Musk display names, with source identities retained in the underlying data |
+| Product imagery | 47 digitally relabeled Eden Musk packaging images; original source galleries remain archived |
 | Descriptions | Original wording based on published fragrance facts and references |
 | Inspiration | Named retailer reference where reliably provided |
-| Notes | Names mentioned in source text plus original retailer note diagrams; no invented top/heart/base assignments |
+| Notes | Published note names displayed as text; no invented top/heart/base assignments |
 | Bottle options | Exact listed variant titles, including the Scentora 50 ml option where supplied |
 | SKU and prices | Exact source SKU and integer-cent prices; source compare-at values distinguished from designer retail price |
-| Variant photo | Matching source variant image selected where supplied |
+| Variant photo | Local Eden Musk bottle visualization for the displayed perfume |
 | Ingredients | Published ingredient disclosure; otherwise the missing source field is identified |
 | Concentration and origin | Product-level source fields, with Scentora brand-level claims explicitly identified where applicable |
 | Availability | Dated source availability; unavailable options cannot be added to the planning bag |
