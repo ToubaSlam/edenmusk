@@ -26,7 +26,7 @@ test('known retailer records retain actual sizes, currency, ingredients and prov
 test('every actual perfume renders its product page without fabricated size options',()=>{for(const p of products){const html=actualProductView(p,{bottle:()=>'<img>',money:n=>String(n),cards:()=>'',reviewsBlock:()=>''});assert.ok(html.includes('source-feed price'));assert.ok(html.includes(p.source.url));assert.ok(html.includes('data-product-add="'+p.id+'"'));for(const v of p.variants)assert.ok(html.includes('data-size="'+v.size+'"'))}});
 
 test('all displayed perfume images use local Eden Musk artwork without changing bottle specifications',()=>{
- for(const p of products){assert.equal(p.source.images.length,1);const image=p.source.images[0].url;assert.match(image,/^assets\/products\/eden-musk-\d+\.webp$/);assert.ok(fs.existsSync(new URL('../'+image,import.meta.url)));assert.ok(p.variants.every(v=>v.imageUrl===image));assert.equal(p.source.noteImages.length,0)}
+ for(const p of products){assert.equal(p.source.images.length,1);const image=p.source.images[0].url;assert.equal(image,'assets/products/eden-musk-'+p.name.split(' - ')[1].toLowerCase()+'.webp');assert.ok(fs.existsSync(new URL('../'+image,import.meta.url)));assert.ok(p.variants.every(v=>v.imageUrl===image));assert.equal(p.source.noteImages.length,0)}
 });
 
 test('reference galleries display Eden Musk artwork while retaining source facts',()=>{

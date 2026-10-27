@@ -1,5 +1,7 @@
 # Eden Musk product-label edits
 
+The final published photos now use fragrance names instead of reference numbers. See [NAMED-LABELS.md](NAMED-LABELS.md) for the current artwork and prompt template. The notes below describe the initial number-label phase.
+
 Created with the built-in image generation tool from the original retailer bottle photographs. Each edit preserves its perfume number, bottle style and second reference bottle, replaces the main label with EDEN MUSK, and removes unsupported promotional badges. These are digitally relabeled packaging visualizations; source specifications do not establish manufactured Eden Musk inventory.
 
 Files follow `eden-musk-NUMBER.webp`. `data/branded-photos.js` maps stable source IDs to the images. They are used throughout the shop, search, favorites, quiz, comparison, bundles, bag and source library. Unrelated retailer promotional slides are not displayed as Eden Musk offers. Non-perfume reference listings use Eden Musk collection artwork.

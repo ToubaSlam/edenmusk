@@ -34,4 +34,4 @@ The bag is a browser-local plan using actual source product options and prices. 
 
 Storefront display wording now uses Eden Musk throughout. The presentation mapping in `brand.js` preserves original source records, stable product IDs, links and factual fields. Existing source-brand routes continue to work. Local presentation images carry the Eden Musk label; source photo URLs remain in the archived snapshot.
 
-The 47 website product names now use Latin-letter Arabic-inspired names, such as `Eden Musk - Fardous`, `Eden Musk - Rehan`, `Eden Musk - Misk`, and `Eden Musk - Nour`. `data/fragrance-names.js` provides the stable mapping; `docs/FRAGRANCE-NAMES.md` lists every assignment. Original reference codes remain searchable.
+The 47 website product names now use Latin-letter Arabic-inspired names, such as `Eden Musk - Fardous`, `Eden Musk - Rehan`, `Eden Musk - Misk`, and `Eden Musk - Nour`. `data/fragrance-names.js` provides the stable mapping; `docs/FRAGRANCE-NAMES.md` lists every assignment. Original reference codes remain searchable; the printed bottle-photo labels now use the same Latin-letter fragrance names as the website.

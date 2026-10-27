@@ -1,6 +1,6 @@
 # Eden Musk fragrance names
 
-Display names use English letters only. Reference codes remain in source records and existing photo labels, while product titles use the names below. Product IDs, URLs, specifications, prices, and saved bag quantities are unchanged.
+Display names use English letters only. Reference codes remain in source records; both website product titles and bottle-photo labels use the names below. Product IDs, URLs, specifications, prices, and saved bag quantities are unchanged.
 
 | Reference | Website name |
 | --- | --- |

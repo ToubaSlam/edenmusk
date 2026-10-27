@@ -1,5 +1,10 @@
 # Eden Musk garden direction
 
+## Fragrance names on bottle artwork
+
+All 47 bottle-photo labels now use their matching Latin-letter names beneath EDEN MUSK. The former large reference numbers are removed from the artwork; source identifiers remain unchanged in the product records. `data/branded-photos.js` maps each source ID to `assets/products/eden-musk-NAME.webp`. See `assets/products/NAMED-LABELS.md` for the built-in image generation prompt template.
+
+
 ## Eden Musk bottle labels and story
 
 All 47 perfume listings now use individually edited local Eden Musk packaging images, mapped by stable source ID in `data/branded-photos.js`. The main bottle number is preserved in each generated image. Original source galleries and retailer promotion slides no longer appear in the active presentation. Published notes appear as text rather than branded retailer diagrams. Non-perfume reference entries use the Eden Musk collection artwork. Source data files, specifications, quantities, SKU, prices and ingredient disclosures remain unchanged. Image generation used the built-in tool; its prompt template is in `assets/products/GENERATION.md`.
