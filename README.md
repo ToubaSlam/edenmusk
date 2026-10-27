@@ -33,3 +33,5 @@ Run `npm test` and `npm run check`. For browser checks: install dependencies, in
 The bag is a browser-local plan using actual source product options and prices. Eden Musk inventory, payments, accounts, shipping, fulfillment, reviews, discounts, and gifts are not connected. Source availability is a dated retailer observation, not Eden Musk stock. Retailer promotions and guarantees do not automatically apply to a Eden Musk bag. Original retailer links are available on each perfume page.
 
 Storefront display wording now uses Eden Musk throughout. The presentation mapping in `brand.js` preserves original source records, stable product IDs, links and factual fields. Existing source-brand routes continue to work. Local presentation images carry the Eden Musk label; source photo URLs remain in the archived snapshot.
+
+The 47 website product names now use Latin-letter Arabic-inspired names, such as `Eden Musk - Fardous`, `Eden Musk - Rehan`, `Eden Musk - Misk`, and `Eden Musk - Nour`. `data/fragrance-names.js` provides the stable mapping; `docs/FRAGRANCE-NAMES.md` lists every assignment. Original reference codes remain searchable.

@@ -1,4 +1,4 @@
-import {referenceProduct} from '../brand.js';
+import {referenceProduct,brandText} from '../brand.js';
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -6,8 +6,8 @@ import {products} from '../catalog.js';
 import {productQuestions,detailSections,actualProductView} from '../actual-products.js';
 test('Eden Musk display names preserve original source records and variant facts',()=>{
  assert.equal(products.length,47);assert.equal(new Set(products.map(p=>p.slug)).size,47);
- for(const p of products){assert.equal(p.name,p.source.name.replace('SCENTORA','EDEN MUSK'));assert.equal(p.brand,'Eden Musk');assert.equal(p.source.brand,'Scentora');assert.equal(p.variants.length,p.source.variants.length);assert.ok(p.description.includes(p.name));assert.ok(p.source.images.length);for(let i=0;i<p.variants.length;i++){assert.equal(p.variants[i].label,p.source.variants[i].title);assert.equal(p.variants[i].price,p.source.variants[i].price);assert.equal(p.variants[i].sku,p.source.variants[i].sku)}assert.equal(productQuestions(p).length,10)}
- assert.equal(products[0].name,'EDEN MUSK 246');assert.ok(products.every(p=>p.brand==='Eden Musk'));
+ for(const p of products){assert.equal(p.name,brandText(p.source.name));assert.equal(p.brand,'Eden Musk');assert.equal(p.source.brand,'Scentora');assert.equal(p.variants.length,p.source.variants.length);assert.ok(p.description.includes(p.name));assert.ok(p.source.images.length);for(let i=0;i<p.variants.length;i++){assert.equal(p.variants[i].label,p.source.variants[i].title);assert.equal(p.variants[i].price,p.source.variants[i].price);assert.equal(p.variants[i].sku,p.source.variants[i].sku)}assert.equal(productQuestions(p).length,10)}
+ assert.equal(products[0].name,'Eden Musk - Fardous');assert.ok(products.every(p=>p.brand==='Eden Musk'));
 });
 test('product details preserve the exact 50 ml option and published ingredients',()=>{
  const html=detailSections(products[0],{money:n=>'$'+(n/100).toFixed(2)});

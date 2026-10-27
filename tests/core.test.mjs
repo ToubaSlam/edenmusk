@@ -13,7 +13,7 @@ test('source-listed bottles keep their quantity and integer price calculations',
 });
 test('search uses real product names, brands, inspiration and notes',()=>{
  assert.equal(filterProducts({brand:'ALT'}).length,0);
- const matches=filterProducts({query:'Imagination',brand:'Scentora'});assert.ok(matches.some(p=>p.name==='EDEN MUSK 246'));
+ const matches=filterProducts({query:'Imagination',brand:'Scentora'});assert.ok(matches.some(p=>p.name==='Eden Musk - Fardous'));
  const limited=filterProducts({brand:'Scentora',maxPrice:3000});assert.ok(limited.length>0);assert.ok(limited.every(p=>p.brand==='Eden Musk'&&p.price<=3000));
  assert.equal(filterProducts({query:'Ambre Lumiere'}).length,0);
  assert.equal(filterProducts({query:'<img src=x onerror=alert(1)>'}).length,0);
@@ -32,4 +32,10 @@ test('bundles use only the source-listed Scentora size',()=>{
 });
 test('user text is escaped before rendering saved bag notes',()=>{
  assert.equal(escapeHTML('<img src=x onerror="alert(1)">'), '&lt;img src=x onerror=&quot;alert(1)&quot;&gt;');
+});
+
+test('all 47 perfumes have unique Latin-letter names and legacy searches still work',()=>{
+ assert.equal(new Set(products.map(p=>p.name)).size,47);
+ for(const p of products){assert.match(p.name,/^Eden Musk - [A-Za-z]+$/);assert.ok(!/[\u0600-\u06ff]/.test(p.name));const code=p.source.name.match(/\d{3}/)[0];assert.ok(filterProducts({query:code}).some(found=>found.id===p.id));assert.ok(filterProducts({query:p.name}).some(found=>found.id===p.id));}
+ for(const name of ['Fardous','Misk','Rehan','Nour'])assert.ok(products.some(p=>p.name==='Eden Musk - '+name));
 });
